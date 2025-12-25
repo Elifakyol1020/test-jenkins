@@ -10,6 +10,9 @@ import java.time.Duration;
 class ExampleDotComHttpTest {
 
 
+
+
+
     @Test
     void exampleDotCom_accessible_varOrYok() throws Exception {
         HttpClient client = HttpClient.newBuilder()

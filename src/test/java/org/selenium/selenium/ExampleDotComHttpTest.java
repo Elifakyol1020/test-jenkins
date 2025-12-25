@@ -24,7 +24,7 @@ class ExampleDotComHttpTest {
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-        boolean accessible = response.statusCode() == 200 && response.body().contains("Example Domain");
+        boolean accessible = response.statusCode() == 400 && response.body().contains("Example Domain");
         if (accessible) {
             System.out.println("var");
         } else {
